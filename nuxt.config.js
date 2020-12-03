@@ -1,12 +1,13 @@
 import tailwindTypography from '@tailwindcss/typography'
 
 export default {
+  // Generate
   generate: {
     dir: 'docs/',
     fallback: '404.html',
   },
 
-  // srcDir (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-srcdir)
+  // SrcDir (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-srcdir)
   srcDir: 'src/',
 
   // Target (https://go.nuxtjs.dev/config-target)
@@ -45,6 +46,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    // Fixes Safari infinite hot-reload bug
     devMiddleware: {
       headers: {
         'Cache-Control': 'no-store',
@@ -52,13 +54,16 @@ export default {
       },
     },
   },
+
   // Content module (https://content.nuxtjs.org/configuration)
   content: {
     dir: '../content',
   },
+
   // TailwindCSS module (https://tailwindcss.nuxtjs.org/https://tailwindcss.nuxtjs.org/tailwind-config#config-option)
   tailwindcss: {
     config: {
+      // Use the @tailwindcss/typography plugin
       plugins: [tailwindTypography],
     },
   },

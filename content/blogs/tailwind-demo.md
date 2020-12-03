@@ -1,4 +1,10 @@
+---
+title: The power of `@nuxt/content` with `Tailwind CSS/Typography`
+description: Just me testing a new markdown based personal blog.
+---
+
 ### Currently testing `@nuxt/content` with `Tailwind CSS`
+
 #### Please ignore the demo below
 
 <p className="lead">

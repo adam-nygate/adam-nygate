@@ -1,35 +1,44 @@
 <template>
-  <div class="bg-white">
-    <div class="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
-      <div class="space-y-12 lg:grid lg:grid-cols-4 lg:gap-6 lg:space-y-0">
-        <div class="lg:col-start-2 lg:col-span-2">
+  <article class="bg-white max-w-screen-xl mx-auto">
+    <div class="mx-auto py-12 px-8">
+      <div class="grid grid-cols-3">
+        <div class="col-span-1">
           <div
-            class="space-y-4 sm:grid sm:grid-cols-3 sm:items-center sm:gap-6 sm:space-y-0"
+            class="sm:grid sm:grid-cols-3 sm:items-center sm:gap-6 sm:space-y-0"
           >
             <!-- Image -->
-            <div class="relative pb-2/3 sm:pt-2/3">
+            <div class="relative pb-2/3 pt-2/3">
               <img
                 class="inset-0 object-cover h-full w-full shadow-lg rounded-lg"
                 src="me.jpg"
                 alt=""
               />
             </div>
-            <div class="sm:col-span-2">
+            <div class="col-span-2">
               <div class="space-y-4">
-                <div class="text-lg leading-6 font-medium space-y-1">
-                  <h4>Adam Nygate</h4>
-                  <p class="text-indigo-600">
+                <div class="space-y-2">
+                  <h1 class="text-md font-medium">Adam Nygate</h1>
+                  <p class="text-sm text-indigo-600 tracking-tight">
                     Started from the button now we engineer
                   </p>
+                  <div class="text-sm tracking-tight">
+                    <p class="text-gray-700">
+                      Currently building
+                      <a
+                        class="text-gray-900 underline"
+                        href="https://huntr.dev"
+                        >huntr</a
+                      >
+                      with
+                      <a
+                        class="text-gray-900 underline"
+                        href="https://418sec.com"
+                        >418sec</a
+                      >
+                    </p>
+                  </div>
                 </div>
-                <div class="text-lg leading-7">
-                  <p class="text-gray-500">
-                    Currently building
-                    <a href="https://huntr.dev">
-                      huntr - the place to protect open source</a
-                    >, with <a href="https://418sec.com">418sec</a>
-                  </p>
-                </div>
+
                 <ul class="flex space-x-5">
                   <li>
                     <a
@@ -67,200 +76,33 @@
                       </svg>
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150"
+                    >
+                      <span class="sr-only">GitHub</span>
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.99917 0C4.02996 0 0 4.02545 0 8.99143C0 12.9639 2.57853 16.3336 6.15489 17.5225C6.60518 17.6053 6.76927 17.3277 6.76927 17.0892C6.76927 16.8762 6.76153 16.3104 6.75711 15.5603C4.25372 16.1034 3.72553 14.3548 3.72553 14.3548C3.31612 13.316 2.72605 13.0395 2.72605 13.0395C1.9089 12.482 2.78793 12.4931 2.78793 12.4931C3.69127 12.5565 4.16643 13.4198 4.16643 13.4198C4.96921 14.7936 6.27312 14.3968 6.78584 14.1666C6.86761 13.5859 7.10022 13.1896 7.35713 12.965C5.35873 12.7381 3.25756 11.9665 3.25756 8.52116C3.25756 7.53978 3.6084 6.73667 4.18411 6.10854C4.09129 5.88114 3.78244 4.96654 4.27251 3.72904C4.27251 3.72904 5.02778 3.48728 6.74717 4.65082C7.46487 4.45101 8.23506 4.35165 9.00028 4.34779C9.76494 4.35165 10.5346 4.45101 11.2534 4.65082C12.9717 3.48728 13.7258 3.72904 13.7258 3.72904C14.217 4.96654 13.9082 5.88114 13.8159 6.10854C14.3927 6.73667 14.7408 7.53978 14.7408 8.52116C14.7408 11.9753 12.6363 12.7354 10.6318 12.9578C10.9545 13.2355 11.2423 13.7841 11.2423 14.6231C11.2423 15.8247 11.2313 16.7945 11.2313 17.0892C11.2313 17.3299 11.3937 17.6097 11.8501 17.522C15.4237 16.3303 18 12.9628 18 8.99143C18 4.02545 13.97 0 8.99917 0Z"
+                          fill="currentcolor"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-span-2"><Nuxt /></div>
       </div>
-      <div class="antialiased text-gray-900">
-        <div
-          class="px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl"
-        >
-          <article>
-            <h1 class="sr-only">Nuxt + Tailwind CSS Typography</h1>
-            <div class="space-y-10 sm:space-y-12 lg:space-y-20 xl:space-y-24">
-              <Nuxt />
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- <div
-        class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
-      >
-        <div class="absolute inset-0">
-          <div class="bg-white h-1/3 sm:h-2/3"></div>
-        </div>
-        <div class="relative max-w-7xl mx-auto">
-          <div class="text-center">
-            <h2
-              class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
-            >
-              From the blog
-            </h2>
-            <p
-              class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4"
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              libero labore natus atque, ducimus sed.
-            </p>
-          </div>
-          <div
-            class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
-          >
-            <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                  alt=""
-                />
-              </div>
-              <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div class="flex-1">
-                  <p class="text-sm leading-5 font-medium text-indigo-600">
-                    <a href="#" class="hover:underline"> Blog </a>
-                  </p>
-                  <a href="#" class="block">
-                    <h3
-                      class="mt-2 text-xl leading-7 font-semibold text-gray-900"
-                    >
-                      Boost your conversion rate
-                    </h3>
-                    <p class="mt-3 text-base leading-6 text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Architecto accusantium praesentium eius, ut atque fuga
-                      culpa, similique sequi cum eos quis dolorum.
-                    </p>
-                  </a>
-                </div>
-                <div class="mt-6 flex items-center">
-                  <div class="flex-shrink-0">
-                    <a href="#">
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm leading-5 font-medium text-gray-900">
-                      <a href="#" class="hover:underline"> Roel Aufderhar </a>
-                    </p>
-                    <div class="flex text-sm leading-5 text-gray-500">
-                      <time datetime="2020-03-16"> Mar 16, 2020 </time>
-                      <span class="mx-1"> &middot; </span>
-                      <span> 6 min read </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-                  alt=""
-                />
-              </div>
-              <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div class="flex-1">
-                  <p class="text-sm leading-5 font-medium text-indigo-600">
-                    <a href="#" class="hover:underline"> Video </a>
-                  </p>
-                  <a href="#" class="block">
-                    <h3
-                      class="mt-2 text-xl leading-7 font-semibold text-gray-900"
-                    >
-                      How to use search engine optimization to drive sales
-                    </h3>
-                    <p class="mt-3 text-base leading-6 text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit facilis asperiores porro quaerat doloribus, eveniet
-                      dolore. Adipisci tempora aut inventore optio animi.,
-                      tempore temporibus quo laudantium.
-                    </p>
-                  </a>
-                </div>
-                <div class="mt-6 flex items-center">
-                  <div class="flex-shrink-0">
-                    <a href="#">
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm leading-5 font-medium text-gray-900">
-                      <a href="#" class="hover:underline"> Brenna Goyette </a>
-                    </p>
-                    <div class="flex text-sm leading-5 text-gray-500">
-                      <time datetime="2020-03-16"> Mar 16, 2020 </time>
-                      <span class="mx-1"> &middot; </span>
-                      <span> 6 min read </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-                  alt=""
-                />
-              </div>
-              <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div class="flex-1">
-                  <p class="text-sm leading-5 font-medium text-indigo-600">
-                    <a href="#" class="hover:underline"> Case Study</a>
-                  </p>
-                  <a href="#" class="block">
-                    <h3
-                      class="mt-2 text-xl leading-7 font-semibold text-gray-900"
-                    >
-                      Improve your customer experience
-                    </h3>
-                    <p class="mt-3 text-base leading-6 text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint harum rerum voluptatem quo recusandae magni placeat
-                      saepe molestiae, sed excepturi cumque corporis perferendis
-                      hic.
-                    </p>
-                  </a>
-                </div>
-                <div class="mt-6 flex items-center">
-                  <div class="flex-shrink-0">
-                    <a href="#">
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm leading-5 font-medium text-gray-900">
-                      <a href="#" class="hover:underline"> Daniela Metz </a>
-                    </p>
-                    <div class="flex text-sm leading-5 text-gray-500">
-                      <time datetime="2020-03-16"> Mar 16, 2020 </time>
-                      <span class="mx-1"> &middot; </span>
-                      <span> 6 min read </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
-  </div>
+  </article>
 </template>
